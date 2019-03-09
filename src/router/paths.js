@@ -11,7 +11,7 @@ export default [
   },
   {
     path: '/user-profile',
-    name: 'User Profile',
+    name: 'City Profile',
     view: 'UserProfile'
   },
   {
