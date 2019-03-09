@@ -77,11 +77,11 @@ export default {
         icon: "mdi-map-marker",
         text: "City surveillance"
       },
-      {
-        to: "/notifications",
-        icon: "mdi-bell",
-        text: "Notifications"
-      }
+      // {
+      //   to: "/notifications",
+      //   icon: "mdi-bell",
+      //   text: "Notifications"
+      // }
     ],
     responsive: false
   }),

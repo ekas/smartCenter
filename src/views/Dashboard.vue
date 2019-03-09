@@ -41,27 +41,22 @@
           sub-text="State - "
         />
       </v-flex> -->
-      <v-flex md12 sm12 lg4>
+      <v-flex md12 sm12 lg6>
         <material-chart-card
           :data="dailySalesChart.data"
           :options="dailySalesChart.options"
           color="info"
           type="Line"
         >
-          <h4 class="title font-weight-light">Daily Sales</h4>
+          <h4 class="title font-weight-light">Accidents</h4>
           <p class="category d-inline-flex font-weight-light">
             <v-icon color="green" small>mdi-arrow-up</v-icon>
-            <span class="green--text">55%</span>&nbsp;
-            increase in today's sales
+            <span class="green--text">10%</span>&nbsp;
+            increase in rate of Accidents in Tamil Nadu
           </p>
-
-          <template slot="actions">
-            <v-icon class="mr-2" small>mdi-clock-outline</v-icon>
-            <span class="caption grey--text font-weight-light">updated 4 minutes ago</span>
-          </template>
         </material-chart-card>
       </v-flex>
-      <v-flex md12 sm12 lg4>
+      <v-flex md12 sm12 lg6>
         <material-chart-card
           :data="emailsSubscriptionChart.data"
           :options="emailsSubscriptionChart.options"
@@ -69,29 +64,7 @@
           color="red"
           type="Bar"
         >
-          <h4 class="title font-weight-light">Email Subscription</h4>
-          <p class="category d-inline-flex font-weight-light">Last Campaign Performance</p>
-
-          <template slot="actions">
-            <v-icon class="mr-2" small>mdi-clock-outline</v-icon>
-            <span class="caption grey--text font-weight-light">updated 10 minutes ago</span>
-          </template>
-        </material-chart-card>
-      </v-flex>
-      <v-flex md12 sm12 lg4>
-        <material-chart-card
-          :data="dataCompletedTasksChart.data"
-          :options="dataCompletedTasksChart.options"
-          color="green"
-          type="Line"
-        >
-          <h3 class="title font-weight-light">Completed Tasks</h3>
-          <p class="category d-inline-flex font-weight-light">Last Last Campaign Performance</p>
-
-          <template slot="actions">
-            <v-icon class="mr-2" small>mdi-clock-outline</v-icon>
-            <span class="caption grey--text font-weight-light">campaign sent 26 minutes ago</span>
-          </template>
+          <h4 class="title font-weight-light">Top 5 States with Highest Accident Rates</h4>
         </material-chart-card>
       </v-flex>
       <v-flex md12 lg12>
@@ -122,34 +95,15 @@ export default {
     return {
       dailySalesChart: {
         data: {
-          labels: ["M", "T", "W", "T", "F", "S", "S"],
-          series: [[12, 17, 7, 17, 23, 18, 38]]
+          labels: ["2014", "2015", "2016"],
+          series: [[67250, 69059, 71431]]
         },
         options: {
           lineSmooth: this.$chartist.Interpolation.cardinal({
             tension: 0
           }),
-          low: 0,
-          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-          chartPadding: {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0
-          }
-        }
-      },
-      dataCompletedTasksChart: {
-        data: {
-          labels: ["12am", "3pm", "6pm", "9pm", "12pm", "3am", "6am", "9am"],
-          series: [[230, 750, 450, 300, 280, 240, 200, 190]]
-        },
-        options: {
-          lineSmooth: this.$chartist.Interpolation.cardinal({
-            tension: 0
-          }),
-          low: 0,
-          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          low: 40000,
+          high: 80000, 
           chartPadding: {
             top: 0,
             right: 0,
@@ -161,27 +115,20 @@ export default {
       emailsSubscriptionChart: {
         data: {
           labels: [
-            "Ja",
-            "Fe",
-            "Ma",
-            "Ap",
-            "Mai",
-            "Ju",
-            "Jul",
-            "Au",
-            "Se",
-            "Oc",
-            "No",
-            "De"
+            "Gujarat",
+            "Karnataka",
+            "Kerala",
+            "MP",
+            "Maharashtra"
           ],
-          series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]]
+          series: [[21859, 43713, 37000, 53472, 61627]]
         },
         options: {
           axisX: {
             showGrid: false
           },
-          low: 0,
-          high: 1000,
+          low: 10000,
+          high: 70000,
           chartPadding: {
             top: 0,
             right: 5,
