@@ -2,8 +2,9 @@
   "name": "smartcenter",
   "version": "1.0.0",
   "scripts": {
+    "mock-server": "json-server --watch data.json --port 9000",
     "serve": "vue-cli-service serve",
-    "dev": "npm run serve",
+    "dev": "concurrently --kill-others \"npm run mock-server\" \"npm run serve\"",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -25,6 +26,7 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-standard": "^3.0.1",
     "axios": "^0.17.1",
+    "concurrently": "^4.1.0",
     "material-design-icons-iconfont": "^3.0.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
