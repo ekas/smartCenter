@@ -50,12 +50,12 @@ export default {
       {
         to: "/dashboard",
         icon: "mdi-view-dashboard",
-        text: "Dashboard"
+        text: "City Analysis"
       },
       {
         to: "/user-profile",
         icon: "mdi-account",
-        text: "User Profile"
+        text: "City Profile"
       },
       // {
       //   to: '/table-list',
@@ -75,7 +75,7 @@ export default {
       {
         to: "/maps",
         icon: "mdi-map-marker",
-        text: "Maps"
+        text: "City surveillance"
       },
       {
         to: "/notifications",

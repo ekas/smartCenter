@@ -6,6 +6,69 @@
   >
     <v-layout wrap>
       <v-flex
+        sm6
+        xs12
+        md6
+        lg3
+      >
+        <material-stats-card
+          color="green"
+          icon="mdi-store"
+          title="Revenue"
+          value="$34,245"
+          sub-icon="mdi-calendar"
+          sub-text="Last 24 Hours"
+        />
+      </v-flex>
+      <v-flex
+        sm6
+        xs12
+        md6
+        lg3
+      >
+        <material-stats-card
+          color="orange"
+          icon="mdi-content-copy"
+          title="Used Space"
+          value="49/50"
+          small-value="GB"
+          sub-icon="mdi-alert"
+          sub-icon-color="error"
+          sub-text="Get More Space..."
+          sub-text-color="text-primary"
+        />
+      </v-flex>
+      <v-flex
+        sm6
+        xs12
+        md6
+        lg3
+      >
+        <material-stats-card
+          color="red"
+          icon="mdi-information-outline"
+          title="Fixed Issues"
+          value="75"
+          sub-icon="mdi-tag"
+          sub-text="Tracked from Github"
+        />
+      </v-flex>
+      <v-flex
+        sm6
+        xs12
+        md6
+        lg3
+      >
+        <material-stats-card
+          color="info"
+          icon="mdi-twitter"
+          title="Followers"
+          value="+245"
+          sub-icon="mdi-update"
+          sub-text="Just Updated"
+        />
+      </v-flex>
+      <v-flex
         md12
         sm12
         lg4
@@ -89,69 +152,6 @@
             <span class="caption grey--text font-weight-light">campaign sent 26 minutes ago</span>
           </template>
         </material-chart-card>
-      </v-flex>
-      <v-flex
-        sm6
-        xs12
-        md6
-        lg3
-      >
-        <material-stats-card
-          color="green"
-          icon="mdi-store"
-          title="Revenue"
-          value="$34,245"
-          sub-icon="mdi-calendar"
-          sub-text="Last 24 Hours"
-        />
-      </v-flex>
-      <v-flex
-        sm6
-        xs12
-        md6
-        lg3
-      >
-        <material-stats-card
-          color="orange"
-          icon="mdi-content-copy"
-          title="Used Space"
-          value="49/50"
-          small-value="GB"
-          sub-icon="mdi-alert"
-          sub-icon-color="error"
-          sub-text="Get More Space..."
-          sub-text-color="text-primary"
-        />
-      </v-flex>
-      <v-flex
-        sm6
-        xs12
-        md6
-        lg3
-      >
-        <material-stats-card
-          color="red"
-          icon="mdi-information-outline"
-          title="Fixed Issues"
-          value="75"
-          sub-icon="mdi-tag"
-          sub-text="Tracked from Github"
-        />
-      </v-flex>
-      <v-flex
-        sm6
-        xs12
-        md6
-        lg3
-      >
-        <material-stats-card
-          color="info"
-          icon="mdi-twitter"
-          title="Followers"
-          value="+245"
-          sub-icon="mdi-update"
-          sub-text="Just Updated"
-        />
       </v-flex>
       <v-flex
         md12
