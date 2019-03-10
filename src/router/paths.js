@@ -7,10 +7,11 @@ export default [
   {
     path: '/dashboard',
     // Relative to /src/views
+    name: 'State Analysis',
     view: 'Dashboard'
   },
   {
-    path: '/user-profile',
+    path: '/city-profile',
     name: 'City Profile',
     view: 'UserProfile'
   },
@@ -28,7 +29,8 @@ export default [
     view: 'Icons'
   },
   {
-    path: '/maps',
+    path: '/surveillance',
+    name: 'City Surveillance',
     view: 'Maps'
   },
   {
